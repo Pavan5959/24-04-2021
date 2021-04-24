@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multiple objects using one single template</title>
+</head>
+<body>
+    <script>
+        //multiple objects using one single template is known as function constructor
+      function Cars(car_brand, car_model, price)
+       {
+           this.car_brand=car_brand;
+           this.car_model=car_model;
+           this.price=price; 
+          this.teslaAutoPilot = function()
+          {
+              document.write("<h2>This car is AutoPilot</h2>");
+          } 
+       } 
+       var c1=new Cars("tesla","model 3",350000);
+       var c2=new Cars("tesla","model p", 450000);
+       c1.teslaAutoPilot();
+       document.write("<h2>"+c2.car_brand+"</h2>")
+    </script>
+</body>
+</html>
