@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objects</title>
+</head>
+
+<body>
+    <script>
+        //literal way of creation of object
+        var car={
+            car_brand:"tesla", //properties of car object
+            car_model:"model", //properties of car object
+            price:3500000,    //properties of car object
+            teslaAutoPilot : function() //method to car object
+            {
+                document.write("<h2>This car is AutoPilot Car</h2>");
+                //either return("car is AutoPilot");
+            }
+        }
+        // obect of car is invoking or calling the property
+        document.write("<h2>"+car.car_brand+"</h2>");
+        
+      // using car object calling the method 
+     document.write("<h2>"+car.teslaAutoPilot()+"</h2>"); //undefined beacuse the method has to return the value
+      
+     //other form of calling method without getting undefined
+     car.teslaAutoPilot();
+    </script>
+</body>
+</html>
