@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manipulation</title>
+</head>
+<body>
+    <button onclick="buttonClick()">click here </button>
+    <h2 id="h2">SOME MORE TEXT</h2>
+
+    <input id="text" placeholder="Enter a value"><br>
+    <button id="btn1" onclick="btn()">CliCK Me</button>
+    <script>
+   //  function buttonClick()
+     {
+           //document is a pre define object.It is loaded into the browser 
+         document.getElementById("h2").innerHTML="Type more text";
+          h2.style.color="orange";
+        // alert("some more text");
+     }
+     function btn()
+     {
+         var b=document.getElementById("text").value;
+         alert(" Value of the Text enters is "+b);
+         
+     }
+
+    
+
+
+    </script>
+</body>
+</html>
