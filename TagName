@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TagName</title>
+</head>
+<body>
+    <p id="p1">This Is A Paragraph 1</p>
+    <p>This Is A Paragraph 2</p>
+    <p>This Is A Paragraph 3</p>
+    <p>This Is A Paragraph 4</p>
+    <p>This Is A Paragraph 5</p><br>
+    <button onclick="changeStyling()">Click Me</button>
+
+    <script>
+        function changeStyling( ) 
+        { 
+         /*var tag = document.getElementsByTagName("p");
+         tag.style.color = "red" //will not work
+         tag[0].style.fontSize = 25;
+         tag[1].style.color = "green";
+         tag[2].style.fontWeight = "bold";
+         tag[3].style.fontStyle = "italic";
+         tag[4].style.backgroundColor = "orange";*/
+
+         //Another Way to access and manipulate
+        var tag1=document.getElementsByTagName("p");
+
+           for(var i=0; i<tag1.length;i++)
+           {
+               tag1[i].style.fontSize = 22;
+               tag1[i].style.color = "green";
+               tag1[i].style.backgroundColor = "gray";
+           }
+         }
+    </script>
+</body>
+</html>
