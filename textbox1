@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>textbox</title>
+</head>
+<body>
+    <!--when inputs are same the both buutons are selected.
+        to select one button then give same name attribute-->
+    <input id="r1" name="name1" type="radio" value="push">Push</input><br>
+    <input id="r2" name="name1" type="radio" value="pop">Pop</input><br>
+    <button id="btn" onclick="btn1()">Click Me</button><br><br><br><br><br>
+   
+   <!--Taking input form the Select Box-->
+   <select id="selectbox">
+       <option value="Kfc">kfc</option>
+       <option value="Zomato">zomato</option>
+       <option value="Swiggy">swiggy</option>
+   </select><br>
+   <button id="btn2" onclick="btn2()">Click Here</button>
+   
+   <script>
+        function btn1()
+        {
+            var rd1=document.getElementById("r1");
+            var rd2=document.getElementById("r2"); 
+            if(rd1.checked==true)
+            {
+                alert("The Selected Channel is "+rd1.value);
+            }
+            else if(rd2.checked==true)
+            {
+                alert("The Selected Channel is "+rd2.value);
+            }
+            else
+            {
+                alert("No channel is selected");
+            }
+
+        }
+        function btn2()
+        {
+            var select = document.getElementById("selectbox");
+              //options is collection of all option in the select tag
+              /*selectedIndex is referd to which we select it shows on the alert.
+                If we want specific data then use index like options[0]*/
+           var v= alert(select.options[select.selectedIndex].value);
+           
+           
+        }
+    </script>
+</body>
+</html>
